@@ -1,0 +1,7 @@
+abbr -a -- gco 'git checkout'
+abbr -a -- ga 'git add'
+abbr -a -- gcane 'git commit --amend --no-edit'
+abbr -a -- gp 'git push'
+abbr -a -- gpf 'git push -f'
+abbr -a --set-cursor='%' -- gcm 'git commit -m "%"'
+abbr -a --set-cursor='%' -- gcam 'git commit --amend -m "%"'
