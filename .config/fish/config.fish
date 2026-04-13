@@ -2,15 +2,12 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-set --export --prepend PATH "/Users/matthieu.gusmini/.rd/bin"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+# direnv
+direnv hook fish | source
 
-# https://github.com/fish-shell/fish-shell/issues/6643#issuecomment-590045287
-set -gx GPG_TTY (tty)
+# pyenv
+pyenv init - fish | source
 
-# Starship
-starship init fish | source
+# zoxide
+zoxide init --cmd cd fish | source
 
-# fzf
-fzf --fish | source
